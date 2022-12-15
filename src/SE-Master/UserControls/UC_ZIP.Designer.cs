@@ -209,13 +209,13 @@
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox1.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox1.ForeColor = System.Drawing.Color.White;
             this.textBox1.Location = new System.Drawing.Point(10, 10);
             this.textBox1.Name = "textBox1";
             this.textBox1.PlaceholderText = " Select a 360.zip file...";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(664, 31);
+            this.textBox1.Size = new System.Drawing.Size(664, 27);
             this.textBox1.TabIndex = 3;
             // 
             // button1
@@ -232,7 +232,7 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "OPEN ZIP";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // panel2
             // 
@@ -256,12 +256,13 @@
             this.ZipProgress.BorderThickness = 1;
             this.ZipProgress.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.ZipProgress.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
+            this.ZipProgress.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ZipProgress.ForeColor = System.Drawing.Color.White;
             this.ZipProgress.Location = new System.Drawing.Point(0, 527);
             this.ZipProgress.Name = "ZipProgress";
             this.ZipProgress.Size = new System.Drawing.Size(236, 30);
             this.ZipProgress.TabIndex = 6;
-            this.ZipProgress.Text = "guna2ProgressBar1";
+            this.ZipProgress.Text = "Zip Progress";
             this.ZipProgress.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             this.ZipProgress.UseWaitCursor = true;
             // 
