@@ -34,7 +34,7 @@ namespace SE_Master.UserControls
             if (fdlg.ShowDialog() == DialogResult.OK)
             {
                 var path = fdlg.FileName;
-                textBox1.Text = path;
+                TxtBoxSelectZip.Text = path;
 
                 // _zipPack = new XZP2Pack(File.OpenRead(path));
 
@@ -46,7 +46,7 @@ namespace SE_Master.UserControls
 
         private void button2_Click(object sender, EventArgs e)
         {
-            textBox1.Text = string.Empty;
+            TxtBoxSelectZip.Text = string.Empty;
         }
 
         private void button5_Click(object sender, EventArgs e)

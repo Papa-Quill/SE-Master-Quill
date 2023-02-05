@@ -28,107 +28,108 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnFileManager = new System.Windows.Forms.Button();
+            this.btnQuickLaunch = new System.Windows.Forms.Button();
+            this.btnTakeScreenshot = new System.Windows.Forms.Button();
+            this.btnShutOff = new System.Windows.Forms.Button();
+            this.btnReboot = new System.Windows.Forms.Button();
+            this.btnGoToDashboard = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // btnFileManager
             // 
-            this.button1.AccessibleName = "btnClose";
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Azonix", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(365, 373);
-            this.button1.Margin = new System.Windows.Forms.Padding(0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(249, 30);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "FILE MANAGER";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnFileManager.AccessibleName = "btnFileManager";
+            this.btnFileManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
+            this.btnFileManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFileManager.Font = new System.Drawing.Font("Azonix", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnFileManager.ForeColor = System.Drawing.Color.White;
+            this.btnFileManager.Location = new System.Drawing.Point(365, 373);
+            this.btnFileManager.Margin = new System.Windows.Forms.Padding(0);
+            this.btnFileManager.Name = "btnFileManager";
+            this.btnFileManager.Size = new System.Drawing.Size(249, 30);
+            this.btnFileManager.TabIndex = 16;
+            this.btnFileManager.Text = "FILE MANAGER";
+            this.btnFileManager.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnQuickLaunch
             // 
-            this.button2.AccessibleName = "btnClose";
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Azonix", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(365, 333);
-            this.button2.Margin = new System.Windows.Forms.Padding(0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(249, 30);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "QUICK LAUNCH";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnQuickLaunch.AccessibleName = "btnQuickLaunch";
+            this.btnQuickLaunch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
+            this.btnQuickLaunch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQuickLaunch.Font = new System.Drawing.Font("Azonix", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnQuickLaunch.ForeColor = System.Drawing.Color.White;
+            this.btnQuickLaunch.Location = new System.Drawing.Point(365, 333);
+            this.btnQuickLaunch.Margin = new System.Windows.Forms.Padding(0);
+            this.btnQuickLaunch.Name = "btnQuickLaunch";
+            this.btnQuickLaunch.Size = new System.Drawing.Size(249, 30);
+            this.btnQuickLaunch.TabIndex = 16;
+            this.btnQuickLaunch.Text = "QUICK LAUNCH";
+            this.btnQuickLaunch.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnTakeScreenshot
             // 
-            this.button3.AccessibleName = "btnClose";
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Azonix", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(365, 293);
-            this.button3.Margin = new System.Windows.Forms.Padding(0);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(249, 30);
-            this.button3.TabIndex = 16;
-            this.button3.Text = "TAKE SCREENSHOT";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnTakeScreenshot.AccessibleName = "btnTakeScreenshot";
+            this.btnTakeScreenshot.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
+            this.btnTakeScreenshot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTakeScreenshot.Font = new System.Drawing.Font("Azonix", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnTakeScreenshot.ForeColor = System.Drawing.Color.White;
+            this.btnTakeScreenshot.Location = new System.Drawing.Point(365, 293);
+            this.btnTakeScreenshot.Margin = new System.Windows.Forms.Padding(0);
+            this.btnTakeScreenshot.Name = "btnTakeScreenshot";
+            this.btnTakeScreenshot.Size = new System.Drawing.Size(249, 30);
+            this.btnTakeScreenshot.TabIndex = 16;
+            this.btnTakeScreenshot.Text = "TAKE SCREENSHOT";
+            this.btnTakeScreenshot.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnShutOff
             // 
-            this.button4.AccessibleName = "btnClose";
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Azonix", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(365, 253);
-            this.button4.Margin = new System.Windows.Forms.Padding(0);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(249, 30);
-            this.button4.TabIndex = 16;
-            this.button4.Text = "SHUT OFF";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnShutOff.AccessibleName = "btnShutOff";
+            this.btnShutOff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
+            this.btnShutOff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnShutOff.Font = new System.Drawing.Font("Azonix", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnShutOff.ForeColor = System.Drawing.Color.White;
+            this.btnShutOff.Location = new System.Drawing.Point(365, 253);
+            this.btnShutOff.Margin = new System.Windows.Forms.Padding(0);
+            this.btnShutOff.Name = "btnShutOff";
+            this.btnShutOff.Size = new System.Drawing.Size(249, 30);
+            this.btnShutOff.TabIndex = 16;
+            this.btnShutOff.Text = "SHUT OFF";
+            this.btnShutOff.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btnReboot
             // 
-            this.button5.AccessibleName = "btnClose";
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Azonix", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(365, 213);
-            this.button5.Margin = new System.Windows.Forms.Padding(0);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(249, 30);
-            this.button5.TabIndex = 16;
-            this.button5.Text = "REBOOT";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnReboot.AccessibleName = "btnReboot";
+            this.btnReboot.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
+            this.btnReboot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReboot.Font = new System.Drawing.Font("Azonix", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnReboot.ForeColor = System.Drawing.Color.White;
+            this.btnReboot.Location = new System.Drawing.Point(365, 213);
+            this.btnReboot.Margin = new System.Windows.Forms.Padding(0);
+            this.btnReboot.Name = "btnReboot";
+            this.btnReboot.Size = new System.Drawing.Size(249, 30);
+            this.btnReboot.TabIndex = 16;
+            this.btnReboot.Text = "REBOOT";
+            this.btnReboot.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btnGoToDashboard
             // 
-            this.button6.AccessibleName = "btnClose";
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Azonix", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(365, 173);
-            this.button6.Margin = new System.Windows.Forms.Padding(0);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(249, 30);
-            this.button6.TabIndex = 16;
-            this.button6.Text = "GO TO DASHBOARD";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnGoToDashboard.AccessibleName = "btnGoToDashboard";
+            this.btnGoToDashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
+            this.btnGoToDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGoToDashboard.Font = new System.Drawing.Font("Azonix", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnGoToDashboard.ForeColor = System.Drawing.Color.White;
+            this.btnGoToDashboard.Location = new System.Drawing.Point(365, 173);
+            this.btnGoToDashboard.Margin = new System.Windows.Forms.Padding(0);
+            this.btnGoToDashboard.Name = "btnGoToDashboard";
+            this.btnGoToDashboard.Size = new System.Drawing.Size(249, 30);
+            this.btnGoToDashboard.TabIndex = 16;
+            this.btnGoToDashboard.Text = "GO TO DASHBOARD";
+            this.btnGoToDashboard.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
+            this.label1.AccessibleName = "XBXTitle";
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Azonix", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -146,12 +147,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnGoToDashboard);
+            this.Controls.Add(this.btnTakeScreenshot);
+            this.Controls.Add(this.btnReboot);
+            this.Controls.Add(this.btnQuickLaunch);
+            this.Controls.Add(this.btnShutOff);
+            this.Controls.Add(this.btnFileManager);
             this.Name = "UC_XBX";
             this.Size = new System.Drawing.Size(978, 577);
             this.ResumeLayout(false);
@@ -161,12 +162,12 @@
 
         #endregion
 
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
-        private Button button5;
-        private Button button6;
+        private Button btnFileManager;
+        private Button btnQuickLaunch;
+        private Button btnTakeScreenshot;
+        private Button btnShutOff;
+        private Button btnReboot;
+        private Button btnGoToDashboard;
         private Label label1;
     }
 }

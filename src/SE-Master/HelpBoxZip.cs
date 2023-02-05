@@ -34,12 +34,12 @@ namespace SE_Master
 
         private void button1_MouseHover(object sender, EventArgs e)
         {
-            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(62)))), ((int)(((byte)(67)))));
+            this.btnCloseInfoBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(62)))), ((int)(((byte)(67)))));
         }
 
         private void button1_MouseLeave(object sender, EventArgs e)
         {
-            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
+            this.btnCloseInfoBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
         }
     }
 }

@@ -17,7 +17,7 @@ namespace SE_Master.UserControls
             InitializeComponent();
         }
 
-        private void button10_Click(object sender, EventArgs e)
+        private void Button10_Click(object sender, EventArgs e)
         {
             OpenFileDialog fdlg2 = new OpenFileDialog();
             fdlg2.Title = "SE Master | Select a cfg/testscript file";
@@ -30,22 +30,22 @@ namespace SE_Master.UserControls
             }
         }
 
-        private async void changeText()
+        private async void ChangeText()
         {
-            btnCVARs.Text = "Link Copied!";
+            btnDownloadCVARs.Text = "Link Copied!";
             await Task.Delay(2000);
-            btnCVARs.Text = "Download CVARs!";
+            btnDownloadCVARs.Text = "Download CVARs!";
         }
 
         private void DownloadCVARS_click(object sender, EventArgs e)
         {
             Clipboard.SetText("https://cdn.discordapp.com/attachments/909176335535054939/1051897912088596520/X360-Source-CVARs.zip");
-            changeText();
+            ChangeText();
         }
 
-        private void btnClear_Click(object sender, EventArgs e)
+        private void BtnClear_Click(object sender, EventArgs e)
         {
-            textBox2.Text = string.Empty;
+            RTEConsoleTxtBox.Text = string.Empty;
         }
     }
 }

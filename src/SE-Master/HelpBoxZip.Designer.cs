@@ -33,6 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -40,8 +41,7 @@
             this.headerBG = new System.Windows.Forms.Panel();
             this.SEMIcon = new System.Windows.Forms.PictureBox();
             this.TitleLabel = new System.Windows.Forms.Label();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
+            this.btnCloseInfoBox = new System.Windows.Forms.Button();
             this.Body.SuspendLayout();
             this.headerBG.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SEMIcon)).BeginInit();
@@ -81,6 +81,7 @@
             // 
             // label6
             // 
+            this.label6.AccessibleName = "TxtNote";
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.Color.White;
@@ -92,6 +93,7 @@
             // 
             // label5
             // 
+            this.label5.AccessibleName = "TxtPadInfo";
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.White;
@@ -101,8 +103,21 @@
             this.label5.TabIndex = 2;
             this.label5.Text = "ONLY PAD IF NOT ON A MODDED CONSOLE";
             // 
+            // label7
+            // 
+            this.label7.AccessibleName = "TxtZipHelp4";
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Azonix", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(25, 237);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(439, 21);
+            this.label7.TabIndex = 2;
+            this.label7.Text = "MOVE TO CONSOLE/ISO, SAME NAME";
+            // 
             // label4
             // 
+            this.label4.AccessibleName = "TxtZipHelp3";
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Azonix", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.White;
@@ -114,6 +129,7 @@
             // 
             // label2
             // 
+            this.label2.AccessibleName = "TxtZipHelp2";
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Azonix", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.White;
@@ -125,6 +141,7 @@
             // 
             // label3
             // 
+            this.label3.AccessibleName = "TxtZipHelp1";
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Azonix", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.White;
@@ -149,7 +166,7 @@
             this.headerBG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
             this.headerBG.Controls.Add(this.SEMIcon);
             this.headerBG.Controls.Add(this.TitleLabel);
-            this.headerBG.Controls.Add(this.btnClose);
+            this.headerBG.Controls.Add(this.btnCloseInfoBox);
             this.headerBG.Dock = System.Windows.Forms.DockStyle.Top;
             this.headerBG.Location = new System.Drawing.Point(0, 0);
             this.headerBG.Name = "headerBG";
@@ -169,7 +186,7 @@
             // 
             // TitleLabel
             // 
-            this.TitleLabel.AccessibleName = "TitleLabel";
+            this.TitleLabel.AccessibleName = "ZIPHelpTitle";
             this.TitleLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TitleLabel.AutoSize = true;
             this.TitleLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -182,34 +199,24 @@
             this.TitleLabel.Text = "SE ZIP Info";
             this.TitleLabel.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
-            // btnClose
+            // btnCloseInfoBox
             // 
-            this.btnClose.AccessibleName = "btnClose";
-            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("Azonix", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(435, 15);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(0);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(30, 30);
-            this.btnClose.TabIndex = 0;
-            this.btnClose.Text = "X";
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.CloseForm);
-            this.btnClose.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
-            this.btnClose.MouseHover += new System.EventHandler(this.button1_MouseHover);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Azonix", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(25, 237);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(439, 21);
-            this.label7.TabIndex = 2;
-            this.label7.Text = "MOVE TO CONSOLE/ISO, SAME NAME";
+            this.btnCloseInfoBox.AccessibleName = "btnCloseInfoBox";
+            this.btnCloseInfoBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
+            this.btnCloseInfoBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCloseInfoBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCloseInfoBox.Font = new System.Drawing.Font("Azonix", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCloseInfoBox.ForeColor = System.Drawing.Color.White;
+            this.btnCloseInfoBox.Location = new System.Drawing.Point(435, 15);
+            this.btnCloseInfoBox.Margin = new System.Windows.Forms.Padding(0);
+            this.btnCloseInfoBox.Name = "btnCloseInfoBox";
+            this.btnCloseInfoBox.Size = new System.Drawing.Size(30, 30);
+            this.btnCloseInfoBox.TabIndex = 0;
+            this.btnCloseInfoBox.Text = "X";
+            this.btnCloseInfoBox.UseVisualStyleBackColor = true;
+            this.btnCloseInfoBox.Click += new System.EventHandler(this.CloseForm);
+            this.btnCloseInfoBox.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
+            this.btnCloseInfoBox.MouseHover += new System.EventHandler(this.button1_MouseHover);
             // 
             // HelpBoxZip
             // 
@@ -243,7 +250,7 @@
 
         private Panel Body;
         private Panel headerBG;
-        private Button btnClose;
+        private Button btnCloseInfoBox;
         private Label TitleLabel;
         private PictureBox SEMIcon;
         private Panel panel3;

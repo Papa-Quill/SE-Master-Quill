@@ -30,18 +30,19 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.btnClearRTEConsole = new System.Windows.Forms.Button();
+            this.RTEConsoleTxtBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.btnCVARs = new System.Windows.Forms.Button();
+            this.btnSendCFGorTestscript = new System.Windows.Forms.Button();
+            this.btnSendCVAR = new System.Windows.Forms.Button();
+            this.TxtInputCVARs = new System.Windows.Forms.TextBox();
+            this.btnDownloadCVARs = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
+            this.label1.AccessibleName = "RTETitle";
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Azonix", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -57,45 +58,47 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.btnClose);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.btnClearRTEConsole);
+            this.panel1.Controls.Add(this.RTEConsoleTxtBox);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(10, 10);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(678, 557);
             this.panel1.TabIndex = 3;
             // 
-            // btnClose
+            // btnClearRTEConsole
             // 
-            this.btnClose.AccessibleName = "btnClear";
-            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("Azonix", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(585, 6);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(0);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(83, 30);
-            this.btnClose.TabIndex = 19;
-            this.btnClose.Text = "CLEAR";
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClear_Click);
+            this.btnClearRTEConsole.AccessibleName = "btnClearRTEConsole";
+            this.btnClearRTEConsole.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
+            this.btnClearRTEConsole.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearRTEConsole.Font = new System.Drawing.Font("Azonix", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnClearRTEConsole.ForeColor = System.Drawing.Color.White;
+            this.btnClearRTEConsole.Location = new System.Drawing.Point(585, 6);
+            this.btnClearRTEConsole.Margin = new System.Windows.Forms.Padding(0);
+            this.btnClearRTEConsole.Name = "btnClearRTEConsole";
+            this.btnClearRTEConsole.Size = new System.Drawing.Size(83, 30);
+            this.btnClearRTEConsole.TabIndex = 19;
+            this.btnClearRTEConsole.Text = "CLEAR";
+            this.btnClearRTEConsole.UseVisualStyleBackColor = true;
+            this.btnClearRTEConsole.Click += new System.EventHandler(this.BtnClear_Click);
             // 
-            // textBox2
+            // RTEConsoleTxtBox
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(20)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Location = new System.Drawing.Point(10, 40);
-            this.textBox2.MaxLength = 5000;
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PlaceholderText = "> Console Logs";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(658, 507);
-            this.textBox2.TabIndex = 0;
+            this.RTEConsoleTxtBox.AccessibleName = "RTEConsoleBox";
+            this.RTEConsoleTxtBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(20)))));
+            this.RTEConsoleTxtBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RTEConsoleTxtBox.Location = new System.Drawing.Point(10, 40);
+            this.RTEConsoleTxtBox.MaxLength = 5000;
+            this.RTEConsoleTxtBox.Multiline = true;
+            this.RTEConsoleTxtBox.Name = "RTEConsoleTxtBox";
+            this.RTEConsoleTxtBox.PlaceholderText = "> Console Logs";
+            this.RTEConsoleTxtBox.ReadOnly = true;
+            this.RTEConsoleTxtBox.Size = new System.Drawing.Size(658, 507);
+            this.RTEConsoleTxtBox.TabIndex = 0;
             // 
             // label2
             // 
+            this.label2.AccessibleName = "TxtConsoleLogTitle";
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Azonix", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -107,77 +110,78 @@
             this.label2.Text = "SE | CONSOLE";
             this.label2.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
-            // button10
+            // btnSendCFGorTestscript
             // 
-            this.button10.AccessibleName = "btnClose";
-            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Azonix", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button10.ForeColor = System.Drawing.Color.White;
-            this.button10.Location = new System.Drawing.Point(704, 315);
-            this.button10.Margin = new System.Windows.Forms.Padding(0);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(261, 30);
-            this.button10.TabIndex = 4;
-            this.button10.Text = "SEND CFG/TESTSCRIPT";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.btnSendCFGorTestscript.AccessibleName = "btnSendCFGorTestscript";
+            this.btnSendCFGorTestscript.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
+            this.btnSendCFGorTestscript.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSendCFGorTestscript.Font = new System.Drawing.Font("Azonix", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSendCFGorTestscript.ForeColor = System.Drawing.Color.White;
+            this.btnSendCFGorTestscript.Location = new System.Drawing.Point(704, 315);
+            this.btnSendCFGorTestscript.Margin = new System.Windows.Forms.Padding(0);
+            this.btnSendCFGorTestscript.Name = "btnSendCFGorTestscript";
+            this.btnSendCFGorTestscript.Size = new System.Drawing.Size(261, 30);
+            this.btnSendCFGorTestscript.TabIndex = 4;
+            this.btnSendCFGorTestscript.Text = "SEND CFG/TESTSCRIPT";
+            this.btnSendCFGorTestscript.UseVisualStyleBackColor = true;
+            this.btnSendCFGorTestscript.Click += new System.EventHandler(this.Button10_Click);
             // 
-            // button2
+            // btnSendCVAR
             // 
-            this.button2.AccessibleName = "btnClose";
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Azonix", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(704, 275);
-            this.button2.Margin = new System.Windows.Forms.Padding(0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(261, 30);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "SEND CVAR";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnSendCVAR.AccessibleName = "btnSendCVAR";
+            this.btnSendCVAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
+            this.btnSendCVAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSendCVAR.Font = new System.Drawing.Font("Azonix", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSendCVAR.ForeColor = System.Drawing.Color.White;
+            this.btnSendCVAR.Location = new System.Drawing.Point(704, 275);
+            this.btnSendCVAR.Margin = new System.Windows.Forms.Padding(0);
+            this.btnSendCVAR.Name = "btnSendCVAR";
+            this.btnSendCVAR.Size = new System.Drawing.Size(261, 30);
+            this.btnSendCVAR.TabIndex = 4;
+            this.btnSendCVAR.Text = "SEND CVAR";
+            this.btnSendCVAR.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // TxtInputCVARs
             // 
-            this.textBox1.AllowDrop = true;
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(704, 231);
-            this.textBox1.MaxLength = 200;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PlaceholderText = "Input CVARs";
-            this.textBox1.Size = new System.Drawing.Size(261, 31);
-            this.textBox1.TabIndex = 18;
+            this.TxtInputCVARs.AccessibleName = "TxtInputCVARs";
+            this.TxtInputCVARs.AllowDrop = true;
+            this.TxtInputCVARs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
+            this.TxtInputCVARs.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TxtInputCVARs.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtInputCVARs.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TxtInputCVARs.ForeColor = System.Drawing.Color.White;
+            this.TxtInputCVARs.Location = new System.Drawing.Point(704, 231);
+            this.TxtInputCVARs.MaxLength = 200;
+            this.TxtInputCVARs.Name = "TxtInputCVARs";
+            this.TxtInputCVARs.PlaceholderText = "Input CVARs";
+            this.TxtInputCVARs.Size = new System.Drawing.Size(261, 31);
+            this.TxtInputCVARs.TabIndex = 18;
             // 
-            // btnCVARs
+            // btnDownloadCVARs
             // 
-            this.btnCVARs.AccessibleName = "btnCVARs";
-            this.btnCVARs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
-            this.btnCVARs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCVARs.Font = new System.Drawing.Font("Azonix", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnCVARs.ForeColor = System.Drawing.Color.White;
-            this.btnCVARs.Location = new System.Drawing.Point(704, 537);
-            this.btnCVARs.Margin = new System.Windows.Forms.Padding(0);
-            this.btnCVARs.Name = "btnCVARs";
-            this.btnCVARs.Size = new System.Drawing.Size(261, 30);
-            this.btnCVARs.TabIndex = 4;
-            this.btnCVARs.Text = "DOWNLOAD CVAR LIST";
-            this.btnCVARs.UseVisualStyleBackColor = true;
-            this.btnCVARs.Click += new System.EventHandler(this.DownloadCVARS_click);
+            this.btnDownloadCVARs.AccessibleName = "btnDownloadCVARs";
+            this.btnDownloadCVARs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
+            this.btnDownloadCVARs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDownloadCVARs.Font = new System.Drawing.Font("Azonix", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDownloadCVARs.ForeColor = System.Drawing.Color.White;
+            this.btnDownloadCVARs.Location = new System.Drawing.Point(704, 537);
+            this.btnDownloadCVARs.Margin = new System.Windows.Forms.Padding(0);
+            this.btnDownloadCVARs.Name = "btnDownloadCVARs";
+            this.btnDownloadCVARs.Size = new System.Drawing.Size(261, 30);
+            this.btnDownloadCVARs.TabIndex = 4;
+            this.btnDownloadCVARs.Text = "DOWNLOAD CVAR LIST";
+            this.btnDownloadCVARs.UseVisualStyleBackColor = true;
+            this.btnDownloadCVARs.Click += new System.EventHandler(this.DownloadCVARS_click);
             // 
             // UC_RTE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(22)))), ((int)(((byte)(27)))));
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.btnCVARs);
-            this.Controls.Add(this.button10);
+            this.Controls.Add(this.TxtInputCVARs);
+            this.Controls.Add(this.btnSendCVAR);
+            this.Controls.Add(this.btnDownloadCVARs);
+            this.Controls.Add(this.btnSendCFGorTestscript);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Name = "UC_RTE";
@@ -193,12 +197,12 @@
 
         private Label label1;
         private Panel panel1;
-        private Button button10;
-        private Button button2;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private Button btnSendCFGorTestscript;
+        private Button btnSendCVAR;
+        private TextBox TxtInputCVARs;
+        private TextBox RTEConsoleTxtBox;
         private Label label2;
-        private Button btnClose;
-        private Button btnCVARs;
+        private Button btnClearRTEConsole;
+        private Button btnDownloadCVARs;
     }
 }
