@@ -4,7 +4,7 @@
 A brief description of what this project does and who it's for
 
 
-## Features
+## Features (unfinished)
 
 - Real time edit console commands, load configs and test scripts with proper support (RGH)
 - Control your RGH 360 with power tools (quick launch, quick dashboard, restart, shut off)
